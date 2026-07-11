@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ROCKET S.A.</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:Arial,sans-serif;background:#050816;color:#fff;scroll-behavior:smooth}
+header{position:fixed;top:0;width:100%;padding:18px 40px;background:rgba(0,0,0,.6);backdrop-filter:blur(8px);display:flex;justify-content:space-between;z-index:99}
+nav a{color:#fff;text-decoration:none;margin:0 12px}
+.hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;background:linear-gradient(135deg,#0b1b4d,#4b00ff,#00c3ff);background-size:300% 300%;animation:bg 10s infinite}
+@keyframes bg{0%{background-position:0 50%}50%{background-position:100% 50%}100%{background-position:0 50%}}
+h1{font-size:64px}.btn{margin-top:20px;padding:15px 30px;background:#00d4ff;color:#000;border-radius:40px;text-decoration:none;font-weight:bold;transition:.3s}.btn:hover{transform:scale(1.08)}
+section{padding:90px 10%}h2{text-align:center;margin-bottom:30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:#10192f;padding:25px;border-radius:16px;transition:.3s}.card:hover{transform:translateY(-8px);box-shadow:0 0 25px #00d4ff}
+footer{text-align:center;padding:30px;background:#000}
+.social a{color:#00d4ff;margin:0 10px;text-decoration:none}
+form input,form textarea{width:100%;padding:12px;margin:10px 0;border:none;border-radius:8px}
+form button{padding:14px 24px;background:#00d4ff;border:none;border-radius:8px;font-weight:bold;cursor:pointer}
+.whatsapp{position:fixed;right:20px;bottom:20px;background:#25D366;color:#fff;padding:15px 18px;border-radius:50%;text-decoration:none;font-size:24px}
+</style>
+</head>
+<body>
+<header><strong>ROCKET S.A.</strong><nav>
+<a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#ia">IA</a><a href="#contacto">Contacto</a>
+</nav></header>
+<section class="hero" id="inicio">
+<h1>ROCKET S.A.</h1>
+<p>Consultoría • Ventas • Marketing • Inteligencia Artificial</p>
+<a class="btn" href="#contacto">Solicitar Asesoría</a>
+</section>
+<section id="servicios"><h2>Servicios</h2><div class="grid">
+<div class="card"><h3>Consultoría</h3><p>Estrategia empresarial.</p></div>
+<div class="card"><h3>Marketing</h3><p>SEO, Ads y redes sociales.</p></div>
+<div class="card"><h3>Ventas</h3><p>CRM y crecimiento comercial.</p></div>
+<div class="card"><h3>IA</h3><p>Automatización y chatbots.</p></div>
+</div></section>
+<section id="ia"><h2>Inteligencia Artificial</h2><div class="grid">
+<div class="card">Agentes IA</div><div class="card">Machine Learning</div><div class="card">Análisis de Datos</div><div class="card">Automatización</div>
+</div></section>
+<section id="contacto"><h2>Contacto</h2>
+<form onsubmit="alert('Gracias por contactarnos');return false;">
+<input placeholder="Nombre"><input placeholder="Correo">
+<textarea placeholder="Mensaje"></textarea>
+<button>Enviar</button></form>
+<div class="social"><p>Síguenos:</p>
+<a href="#">Facebook</a><a href="#">Instagram</a><a href="#">LinkedIn</a><a href="#">TikTok</a><a href="#">YouTube</a>
+</div>
+</section>
+<footer>© 2026 ROCKET S.A. - Todos los derechos reservados.</footer>
+<a class="whatsapp" href="#">💬</a>
+</body></html>
